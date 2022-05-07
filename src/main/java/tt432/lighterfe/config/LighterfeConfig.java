@@ -13,6 +13,7 @@ public class LighterfeConfig {
 
     private static final Map<String, EnergyConfig> CONFIG_MAP = new HashMap<>();
     private static final LighterConfig LIGHTER_CONFIG;
+    private static final CampfireGeneratorConfig CAMPFIRE_GENERATOR_CONFIG;
 
     static {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
@@ -37,6 +38,7 @@ public class LighterfeConfig {
         builder.push("campfire generator");
 
         CONFIG_MAP.put("campfire_generator", new EnergyConfig(builder));
+        CAMPFIRE_GENERATOR_CONFIG = new CampfireGeneratorConfig(builder);
 
         builder.pop();
 
@@ -49,5 +51,9 @@ public class LighterfeConfig {
 
     public static LighterConfig getLighterConfig() {
         return LIGHTER_CONFIG;
+    }
+
+    public static CampfireGeneratorConfig getCampfireGeneratorConfig() {
+        return CAMPFIRE_GENERATOR_CONFIG;
     }
 }

@@ -22,7 +22,7 @@ public class CampfireGeneratorBlockEntity extends ModBaseBlockEntity {
     }
 
     int progress = 0;
-    int energyPerTick = CampfireGeneratorConfig.getInstance().getEnergyPerTick();
+    int energyPerTick = LighterfeConfig.getCampfireGeneratorConfig().getEnergyPerTick();
 
     public static void tick(Level level, BlockPos pos, BlockState state, CampfireGeneratorBlockEntity be) {
         var belowBlock = level.getBlockState(pos.below()).getBlock();
