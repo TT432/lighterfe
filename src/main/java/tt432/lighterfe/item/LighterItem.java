@@ -34,6 +34,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.util.BlockSnapshot;
 import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.world.BlockEvent;
 import org.jetbrains.annotations.Nullable;
@@ -244,5 +245,30 @@ public class LighterItem extends Item {
             this.setCreativeTag(creativeStack);
             pItems.add(creativeStack);
         }
+    }
+
+    @Nullable
+    @Override
+    public CompoundTag getShareTag(ItemStack stack) {
+        var result = stack.getOrCreateTag();
+
+        stack.getCapability(CapabilityEnergy.ENERGY).ifPresent(cap -> {
+            result.put("energy", ((EnergyStorage) cap).serializeNBT());
+        });
+
+        return result;
+    }
+
+    @Override
+    public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
+        super.readShareTag(stack, nbt);
+
+        if (nbt == null) {
+            return;
+        }
+
+        stack.getCapability(CapabilityEnergy.ENERGY).ifPresent(cap -> {
+            ((EnergyStorage) cap).deserializeNBT(nbt.get("energy"));
+        });
     }
 }
