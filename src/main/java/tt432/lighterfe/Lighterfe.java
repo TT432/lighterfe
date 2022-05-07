@@ -31,6 +31,6 @@ public class Lighterfe {
         ModBlockEntities.BLOCK_ENTITIES.register(bus);
         ModBlocks.BLOCKS.register(bus);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, LighterfeConfig.COMMON_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, LighterfeConfig.COMMON_CONFIG);
     }
 }
