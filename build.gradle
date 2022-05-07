@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'tt432'
-version = '1.18.2-1-1'
+version = '1.18.2-1-2'
 
 java {
     archivesBaseName = 'lighterfe'
@@ -23,7 +23,6 @@ java {
 }
 
 minecraft {
-
     mappings channel: 'parchment', version: '2022.03.13-1.18.2'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')

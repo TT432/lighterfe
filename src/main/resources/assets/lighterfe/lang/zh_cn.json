@@ -1,0 +1,11 @@
+{
+  "item.lighter.tooltip.energy": "能量: %s%s",
+  "itemGroup.lighterfe": "FE 打火机",
+  "item.lighter.tooltip.lit_energy": "点火耗能: %d",
+  "item.lighter.tooltip.fireball_energy": "发射火球耗能: %d",
+  "item.lighterfe.lighter": "FE 打火机",
+  "block.lighterfe.charging_pile": "充电桩",
+  "block.lighterfe.campfire_generator": "篝火发电机",
+  "item.lighter.tooltip.fireball": "按 Q 释放剑气",
+  "item.lighter.tooltip.creative": "创造模式专属"
+}

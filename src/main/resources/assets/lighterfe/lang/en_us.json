@@ -1,0 +1,11 @@
+{
+  "item.lighter.tooltip.energy": "Energy: %s%s",
+  "itemGroup.lighterfe": "Lighter FE",
+  "item.lighter.tooltip.lit_energy": "Lit energy: %d",
+  "item.lighter.tooltip.fireball_energy": "Fireball energy: %d",
+  "item.lighterfe.lighter": "FE Lighter",
+  "block.lighterfe.charging_pile": "Charging Pile",
+  "block.lighterfe.campfire_generator": "Campfire Generator",
+  "item.lighter.tooltip.fireball": "Drop it to fire a fireball",
+  "item.lighter.tooltip.creative": "Creative mode only"
+}
