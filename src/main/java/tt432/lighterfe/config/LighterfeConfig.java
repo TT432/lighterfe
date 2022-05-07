@@ -25,10 +25,6 @@ public class LighterfeConfig {
 
         builder.pop();
 
-        builder.push("lighter (Block)");
-
-        builder.pop();
-
         builder.push("charging pile");
 
         CONFIG_MAP.put("charging_pile", new EnergyConfig(builder));
