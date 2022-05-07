@@ -18,7 +18,7 @@ public class LighterfeConfig {
     static {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
-        builder.push("lighter (Item)");
+        builder.push("lighter");
 
         CONFIG_MAP.put("lighter_item", new EnergyConfig(builder));
         LIGHTER_CONFIG = new LighterConfig(builder);
