@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lighterfe:block/campfire_generator"
+    }
+  }
+}

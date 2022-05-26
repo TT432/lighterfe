@@ -7,5 +7,7 @@
   "block.lighterfe.charging_pile": "Charging Pile",
   "block.lighterfe.campfire_generator": "Campfire Generator",
   "item.lighter.tooltip.fireball": "Drop it to fire a fireball",
-  "item.lighter.tooltip.creative": "Creative mode only"
+  "item.lighter.tooltip.creative": "Creative mode only",
+  "item.lighterfe.feport": "FE Port",
+  "item.lighterfe.febattery": "FE Battery"
 }

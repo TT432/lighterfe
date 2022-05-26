@@ -17,6 +17,12 @@ public class ModItems {
     public static final RegistryObject<Item> LIGHTER = ITEMS.register("lighter",
             () -> new LighterItem(new Item.Properties().tab(Lighterfe.TAB).stacksTo(1)));
 
+    public static final RegistryObject<Item> FEPORT = ITEMS.register("feport",
+            () -> new Item(new Item.Properties().tab(Lighterfe.TAB)));
+
+    public static final RegistryObject<Item> FEBATTERY = ITEMS.register("febattery",
+            () -> new Item(new Item.Properties().tab(Lighterfe.TAB)));
+
     public static final RegistryObject<Item> CHARGING_PILE_BLOCK = ITEMS.register("charging_pile",
             () -> new BlockItem(ModBlocks.CHARGING_PILE.get(), new Item.Properties().tab(Lighterfe.TAB)));
 

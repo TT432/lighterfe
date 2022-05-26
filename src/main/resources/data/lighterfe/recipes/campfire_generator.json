@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IFI",
+    "GBG",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "F": {
+      "item": "furnace"
+    },
+    "P": {
+      "item": "lighterfe:feport"
+    },
+    "B": {
+      "item": "lighterfe:febattery"
+    }
+  },
+  "result": {
+    "item": "lighterfe:campfire_generator"
+  }
+}

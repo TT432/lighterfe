@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "IBI",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "P": {
+      "item": "lighterfe:feport"
+    },
+    "B": {
+      "item": "lighterfe:febattery"
+    }
+  },
+  "result": {
+    "item": "lighterfe:charging_pile"
+  }
+}

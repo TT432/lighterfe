@@ -19,5 +19,5 @@ public class ModBlocks {
             () -> new ChargingPileBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5F)));
 
     public static final RegistryObject<Block> CAMPFIRE_GENERATOR = BLOCKS.register("campfire_generator",
-            () -> new CampfireGeneratorBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5F)));
+            () -> new CampfireGeneratorBlock(BlockBehaviour.Properties.of(Material.STONE).noOcclusion().strength(3.5F)));
 }

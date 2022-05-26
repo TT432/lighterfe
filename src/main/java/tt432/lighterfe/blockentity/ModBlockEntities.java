@@ -2,6 +2,8 @@ package tt432.lighterfe.blockentity;
 
 import net.minecraft.Util;
 import net.minecraft.util.datafix.fixes.References;
+import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;

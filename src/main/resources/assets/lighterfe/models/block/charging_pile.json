@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "lighterfe:chargingtable_side_active",
+    "top": "lighterfe:chargingtable_side_top_active",
+    "bottom": "lighterfe:chargingtable_bottom"
+  }
+}

@@ -22,8 +22,8 @@ public class LighterEntity extends ItemEntity {
         if (
                 !hasPickUpDelay() &&
                 getThrower() != null &&
-                level instanceof ServerLevel serverLevel &&
-                serverLevel.getEntity(getThrower()) instanceof Player player
+                !level.isClientSide &&
+                ((ServerLevel) level).getEntity(getThrower()) instanceof Player player
         ) {
             moveTo(player.position());
         }

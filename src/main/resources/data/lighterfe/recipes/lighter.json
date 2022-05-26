@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IFI",
+    "IBI",
+    "IIE"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "F": {
+      "item": "flint_and_steel"
+    },
+    "E": {
+      "item": "ender_pearl"
+    },
+    "B": {
+      "item": "lighterfe:febattery"
+    }
+  },
+  "result": {
+    "item": "lighterfe:campfire_generator"
+  }
+}

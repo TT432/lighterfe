@@ -7,5 +7,7 @@
   "block.lighterfe.charging_pile": "充电桩",
   "block.lighterfe.campfire_generator": "篝火发电机",
   "item.lighter.tooltip.fireball": "按 Q 释放剑气",
-  "item.lighter.tooltip.creative": "创造模式专属"
+  "item.lighter.tooltip.creative": "创造模式专属",
+  "item.lighterfe.feport": "FE 接口",
+  "item.lighterfe.febattery": "FE 电池"
 }

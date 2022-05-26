@@ -3,6 +3,7 @@ package tt432.lighterfe.item;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerLevel;
@@ -263,12 +264,14 @@ public class LighterItem extends Item {
     public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
         super.readShareTag(stack, nbt);
 
-        if (nbt == null) {
+        Tag energyNbt;
+
+        if (nbt == null || (energyNbt = nbt.get("energy")) == null) {
             return;
         }
 
         stack.getCapability(CapabilityEnergy.ENERGY).ifPresent(cap -> {
-            ((EnergyStorage) cap).deserializeNBT(nbt.get("energy"));
+            ((EnergyStorage) cap).deserializeNBT(energyNbt);
         });
     }
 }
