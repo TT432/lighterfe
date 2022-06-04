@@ -42,8 +42,6 @@ public abstract class ModBaseEntityBlock extends BaseEntityBlock {
             if (!pPlayer.addItem(extracted)) {
                 pPlayer.drop(extracted, false);
             }
-
-            blockEntity.setChanged();
         });
 
         return InteractionResult.CONSUME;

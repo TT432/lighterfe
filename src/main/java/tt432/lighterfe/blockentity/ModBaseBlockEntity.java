@@ -52,7 +52,12 @@ public abstract class ModBaseBlockEntity extends BlockEntity {
         }
 
         if (item == null) {
-            this.item = LazyOptional.of(() -> new ItemStackHandler(1));
+            this.item = LazyOptional.of(() -> new ItemStackHandler(1) {
+                @Override
+                protected void onContentsChanged(int slot) {
+                    setChanged();
+                }
+            });
         }
     }
 
