@@ -35,7 +35,7 @@ public abstract class ModBaseEntityBlock extends BaseEntityBlock {
         }
 
         blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(cap -> {
-            var extracted = cap.getStackInSlot(0);
+            var extracted = cap.extractItem(0, 64, false);
             cap.insertItem(0, pPlayer.getItemInHand(pHand), false);
             pPlayer.setItemInHand(pHand, ItemStack.EMPTY);
 
